@@ -139,7 +139,19 @@ if __name__ == '__main__':
                                   13, 58)
             print("Successfully Sent!")
             continue
+            
+            
+            
+            
+        elif 'open youtube' in command:
+            webbrowser.open("youtube.com")
 
+        elif 'open google' in command:
+            webbrowser.open("google.com")
+        elif 'open stack overflow' in query:
+            webbrowser.open("stackoverflow.com")      
+            
+            
         elif 'who is' in command:
             person = command.replace('who is', '')
             source = wikipedia.summary(person, 100)
